@@ -1,0 +1,107 @@
+.content {
+  display: flex;
+  height: 100%;
+
+  .smallColumn {
+    width: 34%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .alignRight {
+      text-align: right;
+    }
+
+    .iconsColumnContainer {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    .iconsRowContainer {
+      display: flex;
+      gap: 10px;
+      flex-direction: row;
+
+      .firstPlus {
+        animation: scale-in-center 400ms 0.1s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+
+      .secondPlus {
+        animation: scale-in-center 400ms 0.3s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+
+      .thirdPlus {
+        animation: scale-in-center 400ms 0.5s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+
+      .fourthPlus {
+        animation: scale-in-center 400ms 0.7s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+
+      @keyframes scale-in-center {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .index {
+      color: #121212;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+    }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      .question {
+        font-size: 14px;
+      }
+
+      .title {
+        text-transform: uppercase;
+        font-size: 120px;
+        text-align: center;
+        margin: 20px 0px 40px;
+        line-height: 100px;
+      }
+
+      .button {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        background-color: #fff;
+        width: 260px;
+        height: 90px;
+        border-radius: 129px;
+        border: none;
+      }
+    }
+  }
+}
